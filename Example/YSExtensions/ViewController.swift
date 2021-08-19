@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import YSExtensions
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let label = UILabel(text: "UILabel", font: .regularSystemFont(ofSize: 20), textColor: .RGBA(0, 0, 0, 1), textAlignment: .left, backgroundColor: nil)
+        view.addSubview(label) { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-50)
+        }
+        
+        let button = UIButton(title: "UIButton", textColor: .white, font: .regularSystemFont(ofSize: 20), backgroundColor: .lightGray)
+        view.addSubview(button) { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(20)
+        }
     }
 
     override func didReceiveMemoryWarning() {
