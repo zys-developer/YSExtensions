@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YSExtensions_Example' do
+  pod 'YSExtensions', :path => '../'
+
+  target 'YSExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
