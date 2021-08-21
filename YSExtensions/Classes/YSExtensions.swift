@@ -43,12 +43,6 @@ extension UIFont {
     /// 创建字体
     /// - Parameter fontSize: 字号
     /// - Returns: 字体
-    @objc public class func boldSystemFont(ofSize fontSize: CGFloat) -> UIFont {
-        return UIFont.systemFont(ofSize: fontSize, weight: .bold)
-    }
-    /// 创建字体
-    /// - Parameter fontSize: 字号
-    /// - Returns: 字体
     @objc public class func heavySystemFont(ofSize fontSize: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: fontSize, weight: .heavy)
     }
