@@ -298,16 +298,16 @@ extension NSObject {
 
 extension String {
     /// 以字符串命名的图片
-    var image: UIImage? {
+    public var image: UIImage? {
         UIImage(named: self)
     }
     
     /// 以16进制字符串创建的颜色
-    var color: UIColor? {
+    public var color: UIColor? {
         UIColor(self)
     }
     
-    var bytes: [UInt8] {
+    public var bytes: [UInt8] {
         assert(count % 2 == 0, "输入字符串格式不对，8位代表一个字符")
         var bytes = [UInt8]()
         var sum = 0
@@ -340,8 +340,20 @@ extension String {
         return bytes
     }
     
-    var dataValue: Data {
+    public var dataValue: Data {
         Data(bytes)
+    }
+}
+
+extension NSString {
+    /// 以字符串命名的图片
+    @objc public var image: UIImage? {
+        UIImage(named: String(self))
+    }
+    
+    /// 以16进制字符串创建的颜色
+    @objc public var color: UIColor? {
+        UIColor(String(self))
     }
 }
 

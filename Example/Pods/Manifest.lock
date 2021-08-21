@@ -1,6 +1,6 @@
 PODS:
   - SnapKit (4.2.0)
-  - YSExtensions (0.1.0):
+  - YSExtensions (0.1.1):
     - SnapKit
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  YSExtensions: 5645eeba6adf996f2d6e207bc2261eb04550b516
+  YSExtensions: b3e7143721867b77b383bd9ad86671094435bd51
 
 PODFILE CHECKSUM: 571bdf81503473e446fd9a3f5ca77aa54f834af8
 
