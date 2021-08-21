@@ -216,16 +216,16 @@ extension UIButton {
     
     /// 初始化UIButton
     /// - Parameter backgroundImage: 图片
-    @objc public convenience init(backgroundImage: UIImage?) {
+    @objc public convenience init(bgImage image: UIImage?) {
         self.init()
         self.adjustsImageWhenHighlighted = false
-        self.setBackgroundImage(backgroundImage, for: UIControl.State.normal)
+        self.setBackgroundImage(image, for: UIControl.State.normal)
     }
     
     /// 初始化UIButton
     /// - Parameter name: 图片名
-    convenience init(backgroundImage name: String) {
-        self.init(backgroundImage: UIImage(named: name))
+    @objc public convenience init(backgroundImage name: String) {
+        self.init(bgImage: UIImage(named: name))
     }
     
     /// 初始化UIButton
