@@ -1,23 +1,16 @@
 PODS:
-  - SnapKit (4.2.0)
-  - YSExtensions (0.1.3):
-    - SnapKit
+  - YSExtensions (0.1.4)
 
 DEPENDENCIES:
   - YSExtensions (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - SnapKit
 
 EXTERNAL SOURCES:
   YSExtensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  YSExtensions: d7c7f97009c22ce53c4a87b47351ede4e4b68e81
+  YSExtensions: d8be62e62b428805c556c82e9624ba82c2103098
 
 PODFILE CHECKSUM: 571bdf81503473e446fd9a3f5ca77aa54f834af8
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

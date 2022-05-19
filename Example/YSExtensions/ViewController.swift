@@ -8,24 +8,21 @@
 
 import UIKit
 import YSExtensions
-import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let stackview = UIStackView(axis: .vertical)
+        view.addSubview(stackview)
+        stackview.frame = CGRect(x: 0, y: 200, width: view.bounds.width, height: 300)
+        
         let label = UILabel(text: "UILabel", font: .regularSystemFont(ofSize: 20), textColor: .RGBA(0, 0, 0, 1), textAlignment: .left, backgroundColor: nil)
-        view.addSubview(label) { make in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(-50)
-        }
+        stackview.addArrangedSubview(label)
         
         let button = UIButton(title: "UIButton", textColor: .white, font: .regularSystemFont(ofSize: 20), backgroundColor: .lightGray)
-        view.addSubview(button) { make in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(20)
-        }
+        stackview.addArrangedSubview(button)
     }
 
     override func didReceiveMemoryWarning() {
